@@ -39,7 +39,6 @@ class _SettingsPageState extends State<SettingsPage> {
             const Text(
               'Möchte Push-Benachrichtigungen:',
             ),
-            // TODO: final result = await Navigator.of(context).pushNamed("/some_route") as String;
             ElevatedButton(
               onPressed: () async {
                 final userAnswer = await Navigator.pushNamed(
