@@ -13,14 +13,19 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
-        title: Text(title),
+        title: Image.asset(
+          'assets/image/quinderlogoS2.png',
+          height: 35,
+          width: 35,
+        ),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //add to Text Hallo $username,
             const Text(
-              'Hallo, Ugo!',
+              'Hallo',
               style: TextStyle(
                 fontSize: 40,
               ),
@@ -38,7 +43,7 @@ class MyHomePage extends StatelessWidget {
               height: 50,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.deepOrange,
+                  backgroundColor: Colors.deepOrange,
                 ),
                 onPressed: () {
                   Navigator.push(
