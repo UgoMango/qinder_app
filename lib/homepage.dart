@@ -12,11 +12,14 @@ class MyHomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepOrange,
-        title: Image.asset(
-          'assets/image/quinderlogoS2.png',
-          height: 35,
-          width: 35,
+        backgroundColor: const Color.fromARGB(255, 242, 240, 239),
+        title: Padding(
+          padding: const EdgeInsets.all(3.0),
+          child: Image.asset(
+            'assets/image/quinderlogoS2.png',
+            height: 140,
+            width: 140,
+          ),
         ),
       ),
       body: Center(

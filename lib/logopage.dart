@@ -2,7 +2,9 @@
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:qinder_app/login.dart';
 
+// ignore: unused_import
 import 'homepage.dart';
 
 class LogoPage extends StatefulWidget {
@@ -20,9 +22,7 @@ class _LogoPageState extends State<LogoPage> {
         animationDuration: Duration(seconds: 4),
         splashIconSize: 300,
         splash: "assets/image/qinderlogo4.png",
-        nextScreen: const MyHomePage(
-          title: 'Qinder',
-        ),
+        nextScreen: Loginpage(),
         splashTransition: SplashTransition.fadeTransition,
         backgroundColor: Colors.black,
       ),
